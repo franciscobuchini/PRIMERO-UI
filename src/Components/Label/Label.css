@@ -1,0 +1,31 @@
+.LabelContainer {
+  /*SPACING*/
+  margin: 5px 0 5px 0;
+  padding: 3px 10px 5px;
+
+  /*ORGANIZATION*/
+  align-content: center;
+  display: flex;
+
+  /*DESIGN*/
+  border-radius: 5px;
+  background-color: var(--dark);
+  outline: solid 2px var(--medium);
+  color: var(--grey);
+
+  /*FONT*/
+  font-size: 12px;
+  font-weight: 500;
+  user-select: none;
+
+  /*SIZING*/
+  min-width: auto;
+  max-width: fit-content;
+
+  /*ANIMATION*/
+  transition: all 0.3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}

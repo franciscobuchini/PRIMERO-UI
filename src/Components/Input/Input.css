@@ -1,0 +1,64 @@
+.InputContainer {
+  /*SPACING*/
+  margin: 5px 0 5px 0;
+
+  /*ORGANIZATION*/
+  position: relative;
+}
+
+.InputContainer input, input:invalid {
+  /*SPACING*/
+  padding: 8px 12px;
+  width: 100%;
+
+  /*FONT*/
+  font-size: 100%;
+
+  /*DESIGN*/
+  outline: none;
+  border: 2px solid var(--medium);
+  background-color: var(--dark);
+  border-radius: 20px;
+  color: var(--grey);
+}
+
+.InputContainer label {
+  /*FONT*/
+  font-size: 100%;
+
+  /*ORGANIZATION*/
+  position: absolute;
+  left: 0;
+
+  /*SPACING*/
+  padding: 0.8em;
+  margin-left: 0.5em;
+
+  /*DESIGN*/
+  color: var(--grey);
+
+  /*ANIMATION*/
+  transition: all 0.3s ease;
+}
+
+.InputContainer :is(input:focus, input:valid)~label {
+  transform: translateY(-50%) scale(.9);
+  margin: 0em;
+  margin-left: 1.3em;
+  padding: 0.4em;
+  background-color: var(--dark);
+}
+
+.InputContainer :is(input:focus) {
+  border-color: var(--primary);
+}
+
+input[type="number"] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}

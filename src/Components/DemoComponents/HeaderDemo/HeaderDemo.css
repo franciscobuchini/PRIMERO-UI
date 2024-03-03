@@ -1,0 +1,50 @@
+.HeaderDemo {
+  /*DIMENSIONS*/
+  width: 100%;
+  height: 60px;
+
+  /*ORGANIZATION*/
+  display: flex;
+
+  /*STYLE*/
+  border-radius: 5px;
+  background-color: var(--primary); 
+}
+
+.HeaderDemo__LogoArea {
+  /*SPACING*/
+  margin: 0 15px;
+
+  /*DIMENSIONS*/
+  height: 100%;
+  width: 200px;
+
+  /*ORGANIZE*/
+  display: flex;
+  place-items: center;
+
+  /*ANIMATION*/
+  transition: all 0.3s;
+
+  &:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+  }
+}
+
+.HeaderDemo__Logo {
+  /*SPACING*/
+  margin: auto;
+}
+
+.HeaderDemo__ButtonsArea {
+  /*ORGANIZE*/
+  display: flex;
+  place-items: center;
+
+  /*SPACING*/
+  margin: 0 15px;
+  
+  /*DIMENSIONS*/
+  height: 100%;
+}

@@ -1,0 +1,19 @@
+.PresentationUI {
+  place-items: center;
+}
+
+.PresentationUI__Title {
+  color: var(--grey);
+  margin: 5px;
+}
+
+.PresentationUI__Subtitle {
+  display: flex;
+  color: var(--primary);
+  margin: 15px 10px 15px 5px;
+}
+
+.PresentationUI__Component {
+  display: flex;
+  justify-content: space-evenly;
+}

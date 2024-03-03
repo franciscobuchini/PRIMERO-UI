@@ -1,0 +1,10 @@
+.Core {
+  /*SPACING*/
+
+  /*DIMENSIONS*/
+  width: 1000px;
+  margin: 0 auto;
+  
+  /*TESTING*/
+  background-color: var(--dark);
+}

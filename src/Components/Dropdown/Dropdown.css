@@ -1,0 +1,51 @@
+.Dropdown {
+  /*SPACING*/
+  padding: 6px 14px;
+  height:fit-content;
+
+  /*FONT*/
+  font-size: 12px;
+  font-weight: 400;
+
+  /*ORGANIZATION*/
+  position: relative;
+
+  /*ANIMATION*/
+  user-select: none;
+}
+
+.Dropdown__Box {
+  /*SPACING*/
+  padding: 7px;
+  margin: 0px 3px;
+
+  /*DESIGN*/
+  background-color: var(--primaryShadow);
+  border-radius: 8px;
+  
+  /*ORGANIZATION*/
+  position: absolute;
+}
+
+.Dropdown__Item {
+  /*FONT*/
+  font-size: 12px;
+
+  /*ORGANIZATION*/
+  display: block;
+
+  /*SPACING*/  
+  padding: 5px 20px;
+
+  /*DESIGN*/
+  border-radius: 5px;
+  color: var(--grey);
+  
+  /*ANIMATIONS*/
+  transition: all 0.2s;
+
+  &:hover {
+    cursor: pointer;
+    background-color: var(--primary);
+  }
+}

@@ -1,0 +1,60 @@
+.BentoGridElement {
+  background-color: var(--mediumDark);
+  color: var(--grey);
+  border: solid 2px var(--medium);
+  border-radius: 20px;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  transition: all 0.3s;
+
+  &:hover {
+    border: solid 2px var(--primary);
+  }
+}
+
+.BentoBigb3x3 {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.Bentob3x3 {
+  height: 235px;
+  width: 235px;
+  grid-row: span 1;
+  grid-column: span 1;
+
+  &:hover {
+
+    .Bentob3x3__Image {
+      transition: all 0.3s;
+      transform: scale(1.1);
+    }
+  }
+}
+
+.Bentob6x3 {
+  width: 235px;
+  grid-column: span 1;
+  grid-row: span 2;
+  position: relative;
+
+  .Bentob6x3__Image {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    overflow: hidden;
+    max-width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    object-fit: cover;
+  }
+}
+
+.BentoWide {
+  height: 235px;
+  grid-column: span 2;
+  grid-row: span 1;
+}

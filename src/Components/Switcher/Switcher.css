@@ -1,0 +1,58 @@
+.SwitcherComponent {
+  display: flex;
+  padding: 5px 0 5px 5px;
+  border-radius: 5px;
+}
+
+.Switcher__Label {
+  font-size: 17px;
+  position: relative;
+  display: flex;
+  width: 35px;
+  height: 20px;
+  
+
+  >.Switcher__Checkbox {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  >.Switcher__Slider {
+    position: absolute;
+    cursor: pointer;
+    inset: 0;
+    border: 2px solid var(--medium);
+    border-radius: 50px;
+    transition: all 0.4s;
+    background-color: var(--dark);
+
+    &:before {
+      position: absolute;
+      content: "";
+      height: 12px;
+      width: 12px;
+      left: 2px;
+      bottom: 2px;
+      background-color: var(--medium);
+      border-radius: inherit;
+      transition: all 0.4s;
+    }
+  }
+
+  .Switcher__Checkbox:checked + .Switcher__Slider {
+    border: 2px solid var(--primary);
+  }
+
+  .Switcher__Checkbox:checked + .Switcher__Slider:before {
+    transform: translateX(15px);
+    background-color: var(--primary);
+  }
+}
+
+.Switcher__Text {
+  color: var(--grey);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0 10px;
+}

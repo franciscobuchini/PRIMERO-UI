@@ -1,0 +1,19 @@
+.PresentationSection {
+  border: solid 2px var(--medium);
+  background-color: var(--mediumDark);
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.PresentationSection__Box {
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  
+}
+
+.PresentationSection__Title {
+  color: var(--grey);
+  margin: 10px;
+}
+
+

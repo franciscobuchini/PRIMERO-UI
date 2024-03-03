@@ -1,0 +1,49 @@
+.Header {
+  /*DIMENSIONS*/
+  width: 100%;
+  height: 60px;
+
+  /*ORGANIZATION*/
+  position: fixed;
+  display: flex;
+  z-index: 999;
+
+  /*TESTING*/
+  background-color: var(--dark); 
+  color: var(--grey);
+}
+
+.Header__LogoArea {
+  /*SPACING*/
+  margin: 0 15px;
+
+  /*DIMENSIONS*/
+  height: 100%;
+  width: 200px;
+
+  /*ORGANIZE*/
+  display: flex;
+  place-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.Header__Logo {
+  /*SPACING*/
+  margin: auto;
+}
+
+.Header__ButtonsArea {
+  /*ORGANIZE*/
+  display: flex;
+  place-items: center;
+
+  /*SPACING*/
+  margin: 0 15px;
+  >a {margin-left: 4px; font-weight: 600;}
+  
+  /*DIMENSIONS*/
+  height: 100%;
+}

@@ -1,0 +1,9 @@
+.Button {
+  /*SPACING*/
+  padding: 6px 14px;
+  height:fit-content;
+
+  /*FONT*/
+  font-size: 12px;
+  font-weight: 400;
+}
